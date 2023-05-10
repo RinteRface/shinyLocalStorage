@@ -26,10 +26,11 @@ function storageAvailable(type) {
 }
 
 if (storageAvailable("localStorage")) {
+  // Global variable
+  storedVals = {};
   // Retrieve stored data
   $(document).one('shiny:connected', function() {
     if (localStorage.length > 0) {
-      storedVals = {};
       for (var i = 0; i < localStorage.length; i ++) {
         var tmpKey = localStorage.key(i);
         storedVals[tmpKey] = localStorage.getItem(tmpKey);
