@@ -1,5 +1,5 @@
 
-# shinyBrowserCacheTest
+# shinyLocalStorage
 
 <!-- badges: start -->
 <!-- badges: end -->
