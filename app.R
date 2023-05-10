@@ -23,7 +23,7 @@ server <- function(input, output, session) {
     # Don't trigger fake computation if value is stored in
     # browser localStorage
     res <- input$number1 + input$number2
-    # A new value of input$caption must trigger a recalculation
+    # A new value of res must trigger a recalculation
     if (!is.null(input$storage$val) && res == input$storage$val) {
       input$storage$val
     } else {
